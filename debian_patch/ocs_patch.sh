@@ -52,7 +52,7 @@ chmod 755 ohpserver
 sudo mv ohpserver /usr/local/bin/
 
 #Adding Socks
-wget -O /home/proxydirect.py "http://firenetvpn.net/files/socks1"
+wget -O /home/proxydirect.py "https://raw.githubusercontent.com/lodixyruss1/ChoPaaXa/master/socks1"
 
 sed -i "s|Socks_port|$Socks_port|g" "/home/proxydirect.py"
 sed -i "s|SSH_Extra_Port|$SSH_Extra_Port|g" "/home/proxydirect.py"
@@ -60,7 +60,7 @@ sed -i "s|VPN_Name|$VPN_Name|g" "/home/proxydirect.py"
 sed -i "s|OpenVPN_TCP_Port|$OpenVPN_TCP_Port|g" "/home/proxydirect.py"
 
 #Adding Autorecon Socks 
-wget -O /home/proxydirect2.py "http://firenetvpn.net/files/socks2"
+wget -O /home/proxydirect2.py "https://raw.githubusercontent.com/lodixyruss1/ChoPaaXa/master/socks2"
 
 sed -i "s|Socks2_port|$Socks2_port|g" "/home/proxydirect2.py"
 sed -i "s|SSH_Extra_Port|$SSH_Extra_Port|g" "/home/proxydirect2.py"
@@ -68,7 +68,7 @@ sed -i "s|VPN_Name|$VPN_Name|g" "/home/proxydirect2.py"
 sed -i "s|OpenVPN_TCP_Port|$OpenVPN_TCP_Port|g" "/home/proxydirect2.py"
 
 #Adding OVPN Autorecon Socks 
-wget -O /home/proxydirect3.py "http://firenetvpn.net/files/socks3"
+wget -O /home/proxydirect3.py "https://raw.githubusercontent.com/lodixyruss1/ChoPaaXa/master/socks3"
 
 sed -i "s|Socks3_port|$Socks3_port|g" "/home/proxydirect3.py"
 sed -i "s|SSH_Extra_Port|$SSH_Extra_Port|g" "/home/proxydirect3.py"
