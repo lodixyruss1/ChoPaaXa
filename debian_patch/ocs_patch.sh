@@ -290,6 +290,10 @@ echo "
 # Squid Proxy Server: $Squid_Proxy_1, $Squid_Proxy_2       
 # OpenVPN Config: http://$(curl -4s http://ipinfo.io/ip):86
 #
+# Extra Port
+# OpenVPN Server (SSL): 587
+# Globe TM NoLoad (if activated): 80
+#
 # BonChan Patch Script v1.2        
 # Authentication file system                
 # Setup by: FIRENET PHILIPPINES             
