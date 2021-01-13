@@ -6,9 +6,9 @@
 #####################
 ### Configuration ###
 #####################
-VPN_Owner='Firenet Philippines';
-VPN_Name='FirenetVPN';
-Filename_alias='firenet';
+VPN_Owner='FakeNet VPN Philippines';
+VPN_Name='FakeNet VPN';
+Filename_alias='fakenetvpn';
 
 ### Added Server ports
 Socks_port='885';
@@ -292,7 +292,6 @@ echo "
 #
 # Extra Port
 # OpenVPN Server (SSL): 587
-# Globe TM NoLoad (if activated): 80
 #
 # BonChan Patch Script v1.2        
 # Authentication file system                
