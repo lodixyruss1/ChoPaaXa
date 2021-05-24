@@ -17,22 +17,25 @@ Socks2_port='886';
 Socks3_port='887';
 
 ### Default Server ports, Please dont change this area
-OpenVPN_TCP_Port='110';
-OpenVPN_UDP_Port='25222';
+OpenVPN_TCP_Port='80';
+OpenVPN_UDP_Port='1194';
+OpenVPN_SSL_Port='443';
+
 OpenVPN_TCP_EC='25980';
 OpenVPN_UDP_EC='25985';
 OpenVPN_TCP_OHP='8087';
 OpenVPN_OHP_EC='8088';
 Dropbear_OHP='8085';
 SSH_viaOHP='8086';
+
 SSH_Extra_Port='22';
 SSH_Extra_Port='225';
-Squid_Proxy_2='8000';
+Squid_Proxy_2='8181';
 Squid_Proxy_2='8080';
-SSL_viaOpenSSH1='443';
-SSL_viaOpenSSH2='444';
-Dropbear_Port1='550';
-Dropbear_Port2='555';
+SSL_viaOpenSSH1='444';
+SSL_viaOpenSSH2='445';
+Dropbear_Port1='843';
+Dropbear_Port2='844';
 
 #####################
 #####################
@@ -273,27 +276,28 @@ clear
 echo "
 ############################################################
 # SERVER INFO:
-# SSH Server: $SSH_Extra_Port                              
-# SSH via OHP: $SSH_viaOHP                                 
+# SSH Server: $SSH_Extra_Port                                                      
 # Socks Port: $Socks_port                                  
 # Socks Port(Autorecon): $Socks2_port            
-# Socks Port OVPN-TCP(Autorecon): $Socks3_port     
-# SSH via OHP(Autorecon): $SSH_viaAuto                     
+# Socks Port OVPN-TCP(Autorecon): $Socks3_port                   
 # SSL Server Port: $SSL_viaOpenSSH1, $SSL_viaOpenSSH2                         
 # Dropbear Port: $Dropbear_Port1, $Dropbear_Port2 
-# Dropbear via OHP: $Dropbear_OHP
 # OpenVPN Server (TCP): $OpenVPN_TCP_Port                  
 # OpenVPN Server (UDP): $OpenVPN_UDP_Port  
+# OpenVPN Server (SSL): $OpenVPN_SSL_Port 
+
+# SSH via OHP(Autorecon): $SSH_viaAuto 
+# SSH via OHP: $SSH_viaOHP 
+# Dropbear via OHP: $Dropbear_OHP
 # OpenVPN Server (TCP EC): $OpenVPN_TCP_EC
 # OpenVPN Server (UDP EC): $OpenVPN_UDP_EC
 # OpenVPN Server (TCP OHP): $OpenVPN_TCP_OHP
+
 # Squid Proxy Server: $Squid_Proxy_1, $Squid_Proxy_2       
 # OpenVPN Config: http://$(curl -4s http://ipinfo.io/ip):86
 #
-# Extra Port
-# OpenVPN Server (SSL): 587
 #
-# BonChan Patch Script v1.2        
+# BonChan Patch Script v1.0       
 # Authentication file system                
 # Setup by: FIRENET PHILIPPINES             
 # Created by: Lenz Scott Kennedy
